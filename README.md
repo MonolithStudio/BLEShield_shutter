@@ -12,3 +12,5 @@ The project has been tested on iphone5 with iOS 7.1.
 
 Note that this function uses the BLE profile called HID over GATT, and it is not supported until iOS7.
 Also, iDevices support BLE after iphone4S.
+
+About the hardware connection, you can visit the wiki for detail.

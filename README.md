@@ -10,3 +10,5 @@ You can download it and import it into your Arduino environment.
 The project has been tested on iphone5 with iOS 7.1.
 
 
+Note that this function uses the BLE profile called HID over GATT, and it is not supported until iOS7.
+Also, iDevices support BLE after iphone4S.

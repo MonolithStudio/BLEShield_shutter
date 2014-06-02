@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE AttributeServer>
+<Profile Version="1.3">
+    <SetupId>26682</SetupId>
+    <Device>nRF8001_Dx</Device>
+    <Service Type="local" PrimaryService="true">
+        <Name>HID Service</Name>
+        <Uuid>1812</Uuid>
+        <Characteristic>
+            <Name>HID Report</Name>
+            <Uuid>2a4d</Uuid>
+            <DefaultValue></DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>8</MaxDataLength>
+            <AttributeLenType>2</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>true</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>true</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="1" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <ProfileDescriptors>
+                <ProfileDescriptor Name="Report Reference" MaxDataLength="2" DefaultValue="0101" AttributeLenType="1">
+                    <ForceOpen>false</ForceOpen>
+                    <Properties>
+                        <Write>false</Write>
+                        <Read>false</Read>
+                    </Properties>
+                    <Uuid>2908</Uuid>
+                    <SetPipe>false</SetPipe>
+                    <AckIsAuto>true</AckIsAuto>
+                </ProfileDescriptor>
+            </ProfileDescriptors>
+            <PeriodForProperties/>
+        </Characteristic>
+        <Characteristic>
+            <Name>HID Information</Name>
+            <Uuid>2a4a</Uuid>
+            <DefaultValue>11010003</DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>4</MaxDataLength>
+            <AttributeLenType>1</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>false</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>false</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="1" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+        <Characteristic>
+            <Name>HID Report Descriptor</Name>
+            <Uuid>2a4b</Uuid>
+            <DefaultValue>050c0901a1011500250109e909ea9502750181c29506c0</DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>23</MaxDataLength>
+            <AttributeLenType>1</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>false</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>false</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="1" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+    </Service>
+    <Service Type="local" PrimaryService="true">
+        <Name>Device Information</Name>
+        <Uuid>180a</Uuid>
+        <Characteristic>
+            <Name>Hardware Revision String</Name>
+            <Uuid>2a27</Uuid>
+            <DefaultValue></DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>9</MaxDataLength>
+            <AttributeLenType>2</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>false</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>true</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="25" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+    </Service>
+    <Service Type="local" PrimaryService="true">
+        <Name>Battery</Name>
+        <Uuid>180f</Uuid>
+        <Characteristic>
+            <Name>Battery Level</Name>
+            <Uuid>2a19</Uuid>
+            <DefaultValue>32</DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>1</MaxDataLength>
+            <AttributeLenType>1</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>false</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>true</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="1" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+        <Characteristic>
+            <Name>Battery Power State</Name>
+            <Uuid>2a1a</Uuid>
+            <DefaultValue>2F</DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>1</MaxDataLength>
+            <AttributeLenType>1</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>false</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>true</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="1" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+    </Service>
+    <Gapsettings>
+        <Name>MonoLith_BLE_Shutter</Name>
+        <DeviceNameWriteLength>0</DeviceNameWriteLength>
+        <LocalPipeOnDeviceName>false</LocalPipeOnDeviceName>
+        <DeviceNameShortLength>20</DeviceNameShortLength>
+        <Apperance>0000</Apperance>
+        <SecurityLevel>1</SecurityLevel>
+        <AuthenticationReq>0</AuthenticationReq>
+        <IoCapabilities>0</IoCapabilities>
+        <BondTimeout>600</BondTimeout>
+        <SecurityRequestDelay>0</SecurityRequestDelay>
+        <MinimumKeySize>16</MinimumKeySize>
+        <MaximumKeySize>16</MaximumKeySize>
+        <AdvertisingDataBondedBitmap>1a</AdvertisingDataBondedBitmap>
+        <AdvertisingDataGeneralBitmap>0</AdvertisingDataGeneralBitmap>
+        <AdvertisingDataBrodcastBitmap>0</AdvertisingDataBrodcastBitmap>
+        <AdvertisingDataBondedScanResponseBitmap>0</AdvertisingDataBondedScanResponseBitmap>
+        <AdvertisingDataGeneralScanResponseBitmap>0</AdvertisingDataGeneralScanResponseBitmap>
+        <AdvertisingDataBrodcastScanResponseBitmap>0</AdvertisingDataBrodcastScanResponseBitmap>
+        <AdvertisingDataBondedBitmapCustom>0</AdvertisingDataBondedBitmapCustom>
+        <AdvertisingDataGeneralBitmapCustom>0</AdvertisingDataGeneralBitmapCustom>
+        <AdvertisingDataBrodcastBitmapCustom>0</AdvertisingDataBrodcastBitmapCustom>
+        <AdvertisingDataBondedScanResponseBitmapCustom>0</AdvertisingDataBondedScanResponseBitmapCustom>
+        <AdvertisingDataGeneralScanResponseBitmapCustom>0</AdvertisingDataGeneralScanResponseBitmapCustom>
+        <AdvertisingDataBrodcastScanResponseBitmapCustom>0</AdvertisingDataBrodcastScanResponseBitmapCustom>
+        <TxPowerLevelOffset>0</TxPowerLevelOffset>
+        <MinimumConnectionInterval>16</MinimumConnectionInterval>
+        <MaximumConnectionInterval>32</MaximumConnectionInterval>
+        <SlaveLatency>4</SlaveLatency>
+        <TimeoutMultipler>60</TimeoutMultipler>
+        <AddServiceUpdateCharacteristic>false</AddServiceUpdateCharacteristic>
+        <AddServiceUpdateCharacteristicPipe>false</AddServiceUpdateCharacteristicPipe>
+        <ServiceToAdvertise>
+            <Uuid>1812</Uuid>
+        </ServiceToAdvertise>
+        <CustomAdTypes/>
+    </Gapsettings>
+    <Hardwaresettings>
+        <Clocksource>1</Clocksource>
+        <ClockAccuracy>1</ClockAccuracy>
+        <InitialTxPower>1</InitialTxPower>
+        <HfClkSource>0</HfClkSource>
+        <DcDcConverter>0</DcDcConverter>
+        <ActiveSignalModeIndex>0</ActiveSignalModeIndex>
+        <ActiveSignalToTickDistance>0</ActiveSignalToTickDistance>
+        <DynamicWindowLimitingEnabled>true</DynamicWindowLimitingEnabled>
+    </Hardwaresettings>
+    <CurrentInput>
+        <BatteryCharge>220</BatteryCharge>
+        <Master32KhzClockAccuracy>10</Master32KhzClockAccuracy>
+        <ConnectionInterval>1000</ConnectionInterval>
+        <PercentOfTimeSleeping>0</PercentOfTimeSleeping>
+        <PercentOfTimeAdvertising>0</PercentOfTimeAdvertising>
+        <AdvertisingInterval>1280</AdvertisingInterval>
+    </CurrentInput>
+</Profile>
